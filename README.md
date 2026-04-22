@@ -172,7 +172,7 @@ If you use this software, please cite:
 
 ## License
 
-MIT License — free for research, teaching, and commercial use.
+MIT License free for research, teaching, and commercial use.
 
 ***
 
