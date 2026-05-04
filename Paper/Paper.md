@@ -26,7 +26,7 @@ Quantitative characterization of grain size and shape from images is central to 
 
 ## Statement of Need
 
-Grain-scale image analysis underpins studies of sediment transport, abrasion, fluvial dynamics, reservoir characterization, and granular material properties. Classical image-processing approaches—such as thresholding, morphological operations, and watershed segmentation—remain widely used but struggle in images with heterogeneous textures and touching grains [@Soille2003].
+Grain-scale image analysis underpins studies of sediment transport, abrasion, fluvial dynamics, reservoir characterization, and granular material properties. Classical image-processing approaches, such as thresholding, morphological operations, and watershed segmentation—remain widely used but struggle in images with heterogeneous textures and touching grains [@Soille2004].
 
 Convolutional neural networks have substantially improved grain detection accuracy across a range of geoscientific settings [@Mair2022; @Sylvester2025]. However, many modern tools rely on large pretrained models, including foundation models such as the Segment Anything Model [@Kirillov2023], which introduce heavy dependencies, opaque behavior, and difficulties in long-term reproducibility.
 
@@ -46,7 +46,7 @@ A compact U-Net–style convolutional neural network, containing approximately 1
 
 ### Instance Segmentation via Watershed
 
-Binary grain masks produced by the CNN are converted into instance-level segmentations using marker-controlled watershed segmentation on a distance-transform energy surface. This classical approach effectively separates touching grains while maintaining algorithmic transparency [@Soille2003].
+Binary grain masks produced by the CNN are converted into instance-level segmentations using marker-controlled watershed segmentation on a distance-transform energy surface. This classical approach effectively separates touching grains while maintaining algorithmic transparency [@Soille2004].
 
 ---
 
